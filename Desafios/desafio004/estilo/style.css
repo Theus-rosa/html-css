@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor0: #58747A;
+    --cor1: #54B0C7;
+    --cor2: #336C7A;
+    --cor3: #6ADDFB;
+    --cor4: #B5EDFB;
+
+    --font-padrão: 'Work Sans', sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #9fdff0;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: auto;
+}
+h1 {
+    font-family: var(--font-destaque);
+    padding: 4px;
+    font-size: 2em;
+    font-weight: normal;
+}
+h2 {
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-weight: normal;
+}
+header {
+    font-family: var(--font-destaque);
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    
+}
+header h1 {
+    text-shadow: -4px 3px 1px black;
+    color: white;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+header >p {
+    font-family: var(--font-padrão);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+nav {
+    background-color: var(--cor2);
+    box-shadow: 0px 4px 7px #00000091;
+}
+nav >a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bolder;
+}
+nav >a:hover {
+    background-color: #54b0c7c7;
+    transition-duration: 0.5s;
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 2px 5px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 10px;
+}
+main p {
+    text-align: justify;
+    margin: 10px;
+    line-height: 1.1em;
+}
+main img {
+    display: block;
+    margin: auto;
+}
+main img.pequeno {
+    width: 40%;
+}
+div.video {
+    padding: 20px;
+    padding-bottom: 70%;
+    height: 0px;
+    position: relative;
+    display: block;
+    
+    
+}
+div.video >iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+footer {
+    background-color: var(--cor0);
+    font-weight: bolder;
+    margin-top: 25px;
+    padding: 10px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    
+}
+footer a:hover {
+    background-color: #54b0c7c7;
+}
